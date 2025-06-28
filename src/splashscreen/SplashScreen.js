@@ -17,13 +17,12 @@ const SplashScreen = () => {
 
   return (
     <View style={styles.container}>
-        {/* <Text>hello</Text> */}
         <Video
         ref={videoRef}
         source={require('../../assets/video/bytenews.mp4')} 
         style={styles.backgroundVideo}
         resizeMode="cover"
-        muted={true} // Keep it muted if needed
+        muted={true}
         onEnd={() => setIsVideoFinished(true)}
       />
       {/* <Image source={require("../../assets/images/splashImage.png")} height={"4%"} width={"4%"}></Image> */}
